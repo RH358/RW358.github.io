@@ -6,7 +6,7 @@
 <head>
 <style>
 
-#mover {
+#square {
   width: var(--width);
   height: var(--height);
   background: var(--colour);
@@ -18,13 +18,13 @@
 </style>
 </head>
 <body>
-<div id="mover"></div>
+<div id="square"></div>
 <center>
 <button onclick="growing()">Click me</button>
 </center>
 
 <script>
-var root = document.getElementById("mover"); 
+var root = document.getElementById("square"); 
 root.style.setProperty('--left--x', Math.random() * 1300 + "px");
 root.style.setProperty('--top--y', Math.random() * 770 + "px");
 
@@ -45,7 +45,7 @@ root.style.setProperty('--colour', colours[Math.floor(Math.random()*colours.leng
 
 function g(){
   if (base < 800) {
-      var root = document.getElementById("mover"); 
+      var root = document.getElementById("square"); 
       root.style.setProperty('--width', x + "px");
       root.style.setProperty('--height', y + "px");
       x = x + 1; 
@@ -57,7 +57,7 @@ function g(){
 
 function growing(){
 clearInterval(g); 
-var root = document.getElementById("mover");
+var root = document.getElementById("square");
 root.style.setProperty('--left--x', Math.random() * 1300 + "px");
 root.style.setProperty('--top--y', Math.random() * 770 + "px");
 root.style.setProperty('--colour', colours[Math.floor(Math.random()*colours.length)]);
