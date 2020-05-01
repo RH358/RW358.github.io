@@ -31,6 +31,10 @@ root.style.setProperty('--top--y', Math.random() * 770 + "px");
 root.style.setProperty('--width', 50 + "px");
 root.style.setProperty('--height', 50 + "px");
 
+
+var colours = ["red", "blue", "yellow", "green", "purple", "pink"];
+root.style.setProperty('--colour', colours[Math.floor(Math.random()*colours.length)]);
+
 var myVar;
 
 myVar = setInterval(g, 10);
@@ -38,9 +42,6 @@ myVar = setInterval(g, 10);
 var x = 50; 
 var y = 50; 
 var base = 0; 
-
-var colours = ["red", "blue", "yellow", "green", "purple", "pink"];
-root.style.setProperty('--colour', colours[Math.floor(Math.random()*colours.length)]);
 
 
 function g(){
